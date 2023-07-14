@@ -25,5 +25,5 @@ async function asyncCall() {
   console.log(result) // "resolved"
 }
   
-asyncCall()
+// asyncCall()
   

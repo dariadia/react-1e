@@ -17,13 +17,11 @@ async function fetchData() {
 }
 
 // await case
-async function logusers() {
+async function logUsers() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
   console.log(users);
 }
-
-logusers()
 
 // local documents
 async function logLocalDoc() {
@@ -49,7 +47,7 @@ async function fetchTextNone() {
 
 
 // Error Handling
-async function getusers() {
+async function getUsers() {
   let url = 'https://jsonplaceholder.typicode.com/users'
   try {
     let res = await fetch(url)
@@ -59,3 +57,40 @@ async function getusers() {
     console.log(error)
   }
 }
+
+async function getUsersError() {
+  let url = 'https://jsonplaceholder.typicode.com/users-not-here'
+  let res = await fetch(url)
+
+  // if (res.status !== 200) console.log("response:", res)
+  // if (res.status === 422) console.log("response:", 422)
+  if (!res.ok) console.log("response:", res.status)
+  else console.log(await res.json())
+}
+
+
+
+
+
+
+// Fetch options
+async function postData(url = "", data = {}) {
+  const response = await fetch(url, {
+    method: "POST", // GET, POST, PUT, DELETE
+    mode: "cors", // no-cors, cors, same-origin
+    cache: "no-cache", // default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: "follow", // manual, follow, error
+    referrerPolicy: "no-referrer", // no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // must match "Content-Type" header
+  });
+  return response.json()
+}
+
+postData("https://jsonplaceholder.typicode.com/posts", { answer: "ok done!" }).then((data) => {
+  console.log(data);
+});
