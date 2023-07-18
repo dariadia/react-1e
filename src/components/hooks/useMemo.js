@@ -27,7 +27,7 @@ export const Memoed = () => {
     const doubleNumber = slowFunction(number)
     // const doubleNumber = useMemo(() => slowFunction(number), [number])
     const themeStyles = {
-        backgroundColor: dark ? 'yellow' : 'green', color: dark ? 'yellow' : 'green'
+        backgroundColor: dark ? 'yellow' : 'green', color: dark ? 'black' : 'white'
     }
     return (
         <>
