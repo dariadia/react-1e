@@ -19,3 +19,8 @@ const Sample = () => {
 
     return <div>hello world</div>
 }
+
+// p.s. also heed: component will not re-render unless the props change.
+React.memo(function Component(props) {
+  // Do something
+})
