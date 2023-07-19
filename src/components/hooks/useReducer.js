@@ -7,7 +7,12 @@ import { useReducer } from 'react'
 // reducer: a function that specifies how the state gets updated. MUST be pure, takes the state and action as arguments, then return the next state. 
 // initialArg: from which the initial state is calculated. Can be of any type.
 // init?: a func that should return the initial state. If it’s not specified, the initial state is set to initialArg. Otherwise, the initial state = init(initialArg).
-const [state, dispatch] = useReducer(reducer, initialArg, init)
+const Sample = () => {
+  const initialArg = 0
+  const init = (arg) => arg
+  const [state, dispatch] = useReducer(reducer, initialArg, init)
+  return null
+}
 
 // NOTE: In Strict Mode (dev), React will call your reducer and initializer TWICE in order to help you find accidental impurities. 
 
