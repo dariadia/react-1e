@@ -1,17 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import { Memoed } from './components/hooks/useMemo';
+// import { Memoed } from './components/hooks/useMemo';
+import FetchError from './components/hw2/FetchError';
+import FetchUsers from './components/hw2/FetchUsers';
+import UseEffectFetch from './components/hw2/UseEffectFetch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Memoed />
-      </header>
+        {/* <Memoed /> */}
+        <FetchError />
+        <FetchUsers />
+        <UseEffectFetch />
     </div>
   );
 }
