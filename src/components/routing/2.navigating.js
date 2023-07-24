@@ -2,7 +2,9 @@
 //
 
 // Products.js
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+
+const PRODUCT = { slug: 'some-slug', name: 'my awesome product' }
 
 const Products = () => {
     const navigate = useNavigate();
@@ -17,6 +19,11 @@ const Products = () => {
             <button className="btn" onClick={() => navigate(-1)}>
                 Go Back
             </button>
+
+            {/* dynamic routing*/}
+            <Link to={`/products/${PRODUCT.slug}`}>
+                <div className="btn">View Details</div>
+            </Link>
         </div>
     );
 };

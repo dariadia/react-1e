@@ -20,6 +20,10 @@ const MyApp = () => {
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/about" element={<AboutPAge />} />
                 {/* <Route path="*" element={<NoMatch />} /> */}
+
+                {/* dynamic routing
+                <Route path="/products/:slug" element={<ProductDetails />} />
+                <Route path="/products/(:slug)" element={<ProductDetails />} /> */}
             </Routes>
         </>
     );
