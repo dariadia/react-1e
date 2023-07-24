@@ -99,5 +99,10 @@ arr.reduce((el1, el2) => el1 + el2) // O(n)
 arr.concat(arr2) // O(n)
 arr.slice(0,1) // O(n)
 arr.indexOf(3) // O(n)
-arr.some((item) => item === 3) // O(n)
-arr.every((item) => item === 1) // O(n)
+arr2.some((item) => item === 3) // O(n) - true
+arr2.every((item) => item === 1) // O(n) - false
+
+let arr3 = [
+  {id: 124, age: 90},
+  {id: 126, age: 13 }
+]

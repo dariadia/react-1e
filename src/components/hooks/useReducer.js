@@ -78,8 +78,8 @@ function reducer2(count, action) {
   }
 }
 
-function Counter2() {
-  const [count, dispatch] = useReducer(reducer, 0)
+export function Counter2() {
+  const [count, dispatch] = useReducer(reducer2, 0)
 
   return (
     <>

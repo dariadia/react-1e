@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Memoed } from './components/hooks/useMemo';
+import { Counter2 } from './components/hooks/useReducer'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Memoed />
+        <Counter2 />
       </header>
     </div>
   );
