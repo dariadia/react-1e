@@ -1,18 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { Counter2 } from './components/hooks/useReducer'
+// import { Counter2 } from './components/hooks/useReducer'
+import Dashboard from './components/hw4/Dashboard';
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Counter2 />
-      </header>
+      <Dashboard />
     </div>
+
   );
 }
 
