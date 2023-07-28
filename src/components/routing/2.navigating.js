@@ -5,6 +5,10 @@
 import { useNavigate, Link } from 'react-router-dom';
 
 const PRODUCT = { slug: 'some-slug', name: 'my awesome product' }
+const products = [
+    {name: 'myPdf', url: 'some-url.pdf'},
+    {name: 'myPdf2', url: 'some-url-2.pdf'}
+]
 
 const Products = () => {
     const navigate = useNavigate();
@@ -24,6 +28,9 @@ const Products = () => {
             <Link to={`/products/${PRODUCT.slug}`}>
                 <div className="btn">View Details</div>
             </Link>
+            <a href="some-link.html" target="_blank">
+                <img src="some-link"/>hello world
+            </a>
         </div>
     );
 };
