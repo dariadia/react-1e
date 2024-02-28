@@ -6,13 +6,13 @@ import React, { useState } from 'react'
 // одновременно могут быть нажаты все/несколько кнопок
 
 const MOCK = [
-    "Lorem ipsum dolor", 
-    "sit amet, consectetur adipiscing elit.", 
-    "Pellentesque sodales vestibulum", 
-    "nisi a ultricies.", 
-    "Donec rutrum, nunc sed ornare vulputate,", 
-    "justo velit finibus ante,", 
-    "vulputate lobortis mauris", 
+    "Lorem ipsum dolor",
+    "sit amet, consectetur adipiscing elit.",
+    "Pellentesque sodales vestibulum",
+    "nisi a ultricies.",
+    "Donec rutrum, nunc sed ornare vulputate,",
+    "justo velit finibus ante,",
+    "vulputate lobortis mauris",
     "nisl quis ante."
 ]
 
