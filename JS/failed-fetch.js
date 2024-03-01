@@ -3,7 +3,7 @@ async function logUsers() {
     const users = await response.json()
     console.log(users)
 }
-// returns error
+// returns TypeError
 
 
 async function getUsers() {
