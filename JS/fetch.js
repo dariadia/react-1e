@@ -23,16 +23,17 @@ async function logUsers() {
   console.log(users);
 }
 
-// local documents
+// local documents 1
 async function logLocalDoc() {
-  fetch('/README.txt')
+  fetch('/respose-statuses.md')
     .then(response => response.text())
+    // .catch
     .then(data => console.log(data))
 }
 
-// local documents
+// local documents 2
 async function fetchText() {
-  let response = await fetch('/README.txt')
+  let response = await fetch('/respose-statuses.md')
   let data = await response.text()
   console.log(data)
 }
@@ -62,8 +63,8 @@ async function getUsersError() {
   let url = 'https://jsonplaceholder.typicode.com/users-not-here'
   let res = await fetch(url)
 
-  // if (res.status !== 200) console.log("response:", res)
-  // if (res.status === 422) console.log("response:", 422)
+  if (res.status !== 200) console.log("response:", res)
+  if (res.status === 422) alert("response:", 422)
   if (!res.ok) console.log("response:", res.status)
   else console.log(await res.json())
 }

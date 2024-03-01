@@ -1,4 +1,4 @@
-// Promise = Object 
+// Promise = Object
 // represents: the eventual completion (or failure) of an async operation and its resulting value.
 // A states:
 // 1 - pending (initial)
