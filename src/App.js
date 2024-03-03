@@ -17,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+// state vs props https://prezi.com/view/jsxp9TBfObFbVmbggoLr/
