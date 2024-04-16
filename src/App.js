@@ -1,11 +1,11 @@
 import "./App.css";
-import { Memoed } from "./components/hooks/useMemo";
+import { Counter2 } from "./components/hooks/useReducer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Memoed />
+        <Counter2 />
       </header>
     </div>
   );
